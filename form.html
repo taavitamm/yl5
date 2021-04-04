@@ -1,0 +1,195 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ülesanne 4 - Vormid</title>
+</head>
+
+<body>
+<div style="font-family:verdana;font: size 15px">
+<h1>Uuring lemmikloomade kohta</h1>
+<p>Töörühmaga soovime saada vastuseid Eesti elanike lemmikloomade kohta.
+    <br> Saadud andmeid kasutame lemmiklooma programmi loomiseks. Vastamine võtab ainult mõne minuti.
+    <br>
+    <br>Oleme vastamise üle ääretult tänulikud!
+</p>
+<br>
+  <!--form-->
+<form style="font-size:20px" action="mailto:taavitamm@hotmail.com?subject=Uuring lemmikloomade kohta ---> Vastus!" method="post" enctype="text/plain">
+    <fieldset id="personal_data" style="font-size:20px; color:blue">
+
+<!--Personal data-->
+<!--Name, email-->
+<legend>Sinu andmed</legend>
+<label for="name">*Eesnimi</label>
+ <input style="font-size:20px" type="text" name="Name" id="name" placeholder="Palun sisesta ..." required oninvalid="this.setCustomValidity('Palun sisesta oma eesnimi')" 
+ onchange="this.setCustomValidity('')">
+
+ <label id="email-label" for="email">*Email</label>
+ <input style="font-size:20px"  type="email" name="Email" id="email" placeholder="test@gmail.com" required oninvalid="this.setCustomValidity('Palun sisesta emaili aadress')" 
+ onchange="this.setCustomValidity('')">
+  <br>
+  <br>
+  
+  <!--Sex-->
+<label for="Gender"> Sugu</label>
+<br>
+<input type="radio" id="male" name="Gender" value="male">
+<label for="male" >Mees</label><br>
+<input type="radio" id="female" name="Gender" value="female">
+<label for="female">Naine</label><br>
+<input type="radio" id="other" name="Gender" value="other" >
+<label for="other">Muu</label>
+
+  <br>
+  <br>
+
+<label for="birthday">*Sünnipäev</label>
+<input style="font-size:20px" type="date" name="Bday" required oninvalid="this.setCustomValidity('Palun sisesta sünnipäev')" 
+onchange="this.setCustomValidity('')">
+
+    <!--Age-->
+  <label for="drop-down-1">*Kui vana sa oled?</label>
+  <select style="font-size:20px" name="Age" id="drop-down-1" required oninvalid="this.setCustomValidity('Palun tee oma valik')" 
+  onchange="this.setCustomValidity('')">
+        <option value="">---
+        </option>
+        <option value="0_20">0-20 aastat
+        </option>
+        <option value="21_40">21-40 aastat
+        </option>
+        <option value="41_60">41-60 aastat
+        </option>
+        <option value="61_80">61-80 aastat
+        </option>
+        <option value="81-">81+ aastat
+        </option>
+        <option value="Not_answring">Ei soovi vastata
+        </option>
+    </select>
+<br>
+<br>
+<!--Education-->
+<label for="drop-down-2">*Mis haridus Sul on?</label>
+<br>
+<select style="font-size:20px" name="Education" id="drop-down-2" required oninvalid="this.setCustomValidity('Palun tee oma valik')" 
+onchange="this.setCustomValidity('')">
+        <option value="">---
+        </option>
+        <option value="primary">Algharidus
+      </option>
+      <option value="basic">Põhiharidus
+      </option>
+      <option value="secondary">Keskharidus
+      </option>
+      <option value="higher">Kõrgharidus
+      </option>
+      <option value="Not_answring">Ei soovi vastata
+      </option>
+  </select>
+<br>
+<br>
+<label for="drop-down-3">*Mis on Su viimase haridusastme lõpetamise aastate vahemik?</label>
+<br>
+<select style="font-size:20px" name="Graduation" id="drop-down-3" required oninvalid="this.setCustomValidity('Palun tee oma valik')" 
+onchange="this.setCustomValidity('')">
+    <option value="">---
+    </option>
+    <option value="_2000">Enne aastat 2000
+      </option>
+      <option value="2001_2010">2001-2010
+      </option>
+      <option value="2011_2020">2011-2020
+      </option>
+      <option value="Not_answring">Ei soovi vastata
+      </option>
+  </select>
+<br>
+<br>
+
+ <!--Feeling-->
+
+  <label for="drop-down-4">*Kuidas Su tuju täna on?</label>
+  <br>
+  <select style="font-size:20px" name="Feeling" id="drop-down-4" required oninvalid="this.setCustomValidity('Palun tee oma valik')" 
+  onchange="this.setCustomValidity('')">
+  <option value="">---
+</option>
+  <option value="Excellent">Suurepärane
+    </option>
+    <option value="Good">Hea
+    </option>
+    <option value="Not_so_good">Mitte eriti hea
+    </option>
+  
+  <option value="Not_answring">Ei soovi vastata
+</option>
+</select>
+
+</fieldset>
+<br>
+<br>
+
+  <!--pets-->
+
+     <fieldset id="pets" style="font-size:25px; color:rgb(255, 0, 191)">
+    <legend>Lemmikloom</legend>
+
+    <label for="drop-down"> <b>*1. Kas Sul on lemmikloom?</b> </label>
+    <br>
+    <br>
+    <select style="font-size:20px" name="Pet" id="drop-down" required oninvalid="this.setCustomValidity('Palun tee oma valik')" 
+    onchange="this.setCustomValidity('')">
+    
+    <option value="">---
+  </option>
+    <option value="Yes">Jah
+      </option>
+      <option value="No">Ei
+      </option>
+  </select>
+
+    
+    
+ 
+
+<p><b>2. Kui on, siis mis lemmikloom Sul on?</b> </p>
+    <input type="checkbox" name="Pet1" id="pet1" value="Cat">
+    <label for="pet1">Kass</label>
+    <br>
+    <input type="checkbox" name="Pet2" id="pet2" value="Dog">
+    <label for="pet2">Koer</label>
+    <br>
+    <input type="checkbox" name="Pet3" id="pet3" value="Sheep">
+    <label for="pet3">Lammas</label>
+    <br>
+    <input type="checkbox" name="Pet4" id="pet4" value="Rat">
+    <label for="pet4">Rott</label>
+    <br>
+    <input type="checkbox" name="Pet5" id="pet5" value="Hamster">
+    <label for="pet5">Hamster</label>
+    <br>
+    <input type="checkbox" name="Pet6" id="pet6" value="Other">
+    <label for="pet6">Muu</label>
+    <br>
+    <br>
+    <textarea name="Comments" id="comments" rows="4" cols="50" placeholder="Kirjelda pisut oma lemmiklooma ..."></textarea>
+
+  </fieldset>
+<br>
+
+  <!-- submit button -->
+  <input type="submit" id="submit" value="Saada küsitlus ära!"/>
+  <input type="reset" name="reset" value="Puhasta väljad!" />
+  <p>Täname vastamast!</p>
+
+  </form>
+
+</div>
+</body>
+</html>
+<body>
+    
+</body>
+</html>
